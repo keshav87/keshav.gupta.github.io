@@ -120,26 +120,28 @@
   .skill-row .v{ color:var(--body); }
 
   /* Experience */
-  .job{ margin-top:16px; }
-  .job:first-of-type{ margin-top:6px; }
+  .job{ margin-top:0; padding:14px 0 12px; border-top:1px solid var(--rule); }
+  .job:first-of-type{ border-top:none; padding-top:4px; }
   .job-top{ display:flex; justify-content:space-between; align-items:baseline; gap:14px; }
   .co{ font-size:15.5px; font-weight:700; color:var(--ink); font-family:"Calibri","Segoe UI",Arial,sans-serif; }
   .co .loc{ font-weight:400; color:var(--muted); font-size:13px; }
   .dates{ font-size:12.5px; font-weight:700; color:var(--navy-2); white-space:nowrap; font-family:"Calibri","Segoe UI",Arial,sans-serif; }
   .title-line{ display:flex; justify-content:space-between; align-items:baseline; gap:14px; margin:2px 0 2px; }
-  .role2{ font-size:13.6px; font-weight:700; color:var(--navy); font-family:"Calibri","Segoe UI",Arial,sans-serif; }
+  .role2{ font-size:13.6px; font-weight:600; color:var(--navy); font-family:"Calibri","Segoe UI",Arial,sans-serif; }
   .roles{ margin:3px 0 3px; }
   .role-item{ display:flex; justify-content:space-between; align-items:baseline; gap:12px; padding:1px 0; }
-  .role-item .rt{ font-size:13.4px; font-weight:700; color:var(--navy); font-family:"Calibri","Segoe UI",Arial,sans-serif; }
+  .role-item .rt{ font-size:13.4px; font-weight:600; color:var(--navy); font-family:"Calibri","Segoe UI",Arial,sans-serif; }
   .role-item .rd{ font-size:12.2px; color:var(--muted); white-space:nowrap; font-family:"Calibri","Segoe UI",Arial,sans-serif; }
-  .proj{ margin:4px 0 3px; font-size:12.8px; color:var(--body); }
-  .proj b{ color:var(--ink); }
-  ul.bul{ margin:5px 0 6px; padding-left:0; list-style:none; }
-  ul.bul li{ position:relative; padding-left:16px; margin:4px 0; font-size:13px; color:var(--body); }
-  ul.bul li::before{ content:""; position:absolute; left:3px; top:7px; width:5px; height:5px; background:var(--navy-2); border-radius:50%; }
-  ul.bul li strong{ color:var(--ink); }
-  .tech{ font-size:12.3px; color:var(--muted); margin:4px 0 0; }
-  .tech b{ color:var(--ink); }
+  /* Indent the job body so each role's content is clearly grouped under its header */
+  .job-body{ padding-left:15px; border-left:2px solid var(--rule-soft); margin-top:5px; }
+  .proj{ margin:2px 0 4px; font-size:12.8px; color:var(--muted); }
+  .proj .lbl{ color:var(--navy-2); font-weight:600; }
+  ul.bul{ margin:4px 0 5px; padding-left:2px; list-style:none; }
+  ul.bul li{ position:relative; padding-left:15px; margin:4px 0; font-size:13px; color:var(--body); }
+  ul.bul li::before{ content:""; position:absolute; left:2px; top:7px; width:5px; height:5px; background:var(--navy-2); border-radius:50%; }
+  ul.bul li strong{ color:var(--ink); font-weight:700; }
+  .tech{ font-size:12.3px; color:var(--muted); margin:5px 0 0; }
+  .tech .lbl{ color:var(--navy-2); font-weight:600; }
 
   /* Education / Certs */
   .edu{ display:flex; justify-content:space-between; gap:12px; padding:3px 0; font-size:13px; }
@@ -242,14 +244,16 @@
           <span class="dates">May 2026 – Present</span>
         </div>
         <div class="title-line"><span class="role2">Senior Engineering Lead</span></div>
-        <p class="proj"><b>Project:</b> Marketing &amp; Sales Platform (top product-based MNC client) — a strategic engagement enhancing features across multiple marketing and sales products.</p>
+        <div class="job-body">
+        <p class="proj"><span class="lbl">Project:</span> Marketing &amp; Sales Platform (top product-based MNC client) — a strategic engagement enhancing features across multiple marketing and sales products.</p>
         <ul class="bul">
-          <li>Architected and built a <strong>centralized Notification Module</strong> delivering notifications over <strong>email and Microsoft Teams chat</strong> across multiple projects, replacing fragmented per-project logic with a single reusable service — integrating <strong>Microsoft Graph, Teams Connectors, and Logic Apps</strong> for cross-channel delivery.</li>
-          <li>Owned end-to-end <strong>technical design and architecture</strong>, authoring design documents, sequence diagrams, and API contracts and driving alignment across cross-functional teams.</li>
-          <li>Provided technical leadership as <strong>Engineering Lead</strong> — decomposing epics, estimating and planning sprints, mentoring developers, and running <strong>code and PR reviews</strong> to enforce coding standards and quality gates.</li>
-          <li>Authored unit tests to ensure reliability and leveraged <strong>Spec Kit</strong> for AI-assisted, specification-driven development.</li>
+          <li>Architected and built a centralized Notification Module delivering notifications over email and Microsoft Teams chat across multiple projects, replacing fragmented per-project logic with a single reusable service — integrating Microsoft Graph, Teams Connectors, and Logic Apps for cross-channel delivery.</li>
+          <li>Owned end-to-end technical design and architecture, authoring design documents, sequence diagrams, and API contracts and driving alignment across cross-functional teams.</li>
+          <li>Provided technical leadership as Engineering Lead — decomposing epics, estimating and planning sprints, mentoring developers, and running code and PR reviews to enforce coding standards and quality gates.</li>
+          <li>Authored unit tests to ensure reliability and leveraged Spec Kit for AI-assisted, specification-driven development.</li>
         </ul>
-        <p class="tech"><b>Tech:</b> ASP.NET Core, .NET Core, React, Azure SQL, Azure Cloud, Microsoft Graph, Teams Connectors, Logic Apps, Azure OpenAI, Azure Functions, Service Bus, Queues, Blob Storage, Application Insights, Azure DevOps, MSTest, Spec Kit.</p>
+        <p class="tech"><span class="lbl">Tech:</span> ASP.NET Core, .NET Core, React, Azure SQL, Azure Cloud, Microsoft Graph, Teams Connectors, Logic Apps, Azure OpenAI, Azure Functions, Service Bus, Queues, Blob Storage, Application Insights, Azure DevOps, MSTest, Spec Kit.</p>
+        </div>
       </div>
 
       <div class="job">
@@ -261,17 +265,19 @@
           <div class="role-item"><span class="rt">Senior Principal Engineer — Applications Development</span><span class="rd">Nov 2025 – Apr 2026</span></div>
           <div class="role-item"><span class="rt">Principal Engineer — Applications Development</span><span class="rd">Jan 2022 – Oct 2025</span></div>
         </div>
-        <p class="proj"><b>Project:</b> Global Employee Benefits Platform (Darwin) — Mercer's flagship platform using AI, automation, and analytics to deliver personalized, data-driven benefits administration for enterprises worldwide.</p>
+        <div class="job-body">
+        <p class="proj"><span class="lbl">Project:</span> Global Employee Benefits Platform (Darwin) — Mercer's flagship platform using AI, automation, and analytics to deliver personalized, data-driven benefits administration for enterprises worldwide.</p>
         <ul class="bul">
-          <li>Delivered feature enhancements on <strong>Darwin</strong>, a global benefits platform serving <strong>millions of employees across 100+ countries</strong>, improving reliability and user experience at scale.</li>
-          <li>Engineered enhancements across legacy (<strong>Origin</strong>) and current (<strong>Evolve</strong>) products — spanning Control Center (Admin) and Reward Center (End-user) — with core development across <strong>Reimbursement, Scheme Configuration, and Benefit Templates</strong>.</li>
-          <li>Drove <strong>solution architecture and technical design</strong> for key modules, authoring design documents and technical specifications and presenting proposals to architects and stakeholders for sign-off.</li>
-          <li>Integrated <strong>AI-powered translations</strong> and <strong>Azure-based OCR</strong> for automated document extraction, reducing manual document-handling effort by <strong>50%</strong>.</li>
-          <li>Built an <strong>AI-powered chatbot</strong> answering employee queries from benefit documents and policies using <strong>RAG</strong>, backed by <strong>OpenAI GPT-4-family models</strong> via a Mercer-hosted AI governance layer; implemented background agents to ingest and chunk documents, generate embeddings, and populate the vector-based RAG pipeline.</li>
-          <li>Built an Innovation-Week PoC for <strong>automated test-case generation</strong> from requirement documents, orchestrating multiple agents and intermediate reasoning steps to produce structured, relevant test cases.</li>
-          <li>Spearheaded the <strong>UX Lift-off</strong> of Origin toward design parity with Evolve, and enhanced <strong>DCL (Darwin Configuration Language)</strong> to support new rules and configurations; mentored engineers and championed best practices and reusable patterns.</li>
+          <li>Delivered feature enhancements on Darwin, a global benefits platform serving <strong>millions of employees across 100+ countries</strong>, improving reliability and user experience at scale.</li>
+          <li>Engineered enhancements across legacy (Origin) and current (Evolve) products — spanning Control Center (Admin) and Reward Center (End-user) — with core development across Reimbursement, Scheme Configuration, and Benefit Templates.</li>
+          <li>Drove solution architecture and technical design for key modules, authoring design documents and technical specifications and presenting proposals to architects and stakeholders for sign-off.</li>
+          <li>Integrated AI-powered translations and Azure-based OCR for automated document extraction, reducing manual document-handling effort by <strong>50%</strong>.</li>
+          <li>Built an AI-powered chatbot answering employee queries from benefit documents and policies using RAG, backed by OpenAI GPT-4-family models via a Mercer-hosted AI governance layer; implemented background agents to ingest and chunk documents, generate embeddings, and populate the vector-based RAG pipeline.</li>
+          <li>Built an Innovation-Week PoC for automated test-case generation from requirement documents, orchestrating multiple agents and intermediate reasoning steps to produce structured, relevant test cases.</li>
+          <li>Spearheaded the UX Lift-off of Origin toward design parity with Evolve, and enhanced DCL (Darwin Configuration Language) to support new rules and configurations; mentored engineers and championed best practices and reusable patterns.</li>
         </ul>
-        <p class="tech"><b>Tech:</b> ASP.NET Core, OpenAI, Angular, RabbitMQ, SQL Server, MongoDB.</p>
+        <p class="tech"><span class="lbl">Tech:</span> ASP.NET Core, OpenAI, Angular, RabbitMQ, SQL Server, MongoDB.</p>
+        </div>
       </div>
 
       <div class="job">
@@ -283,14 +289,16 @@
           <div class="role-item"><span class="rt">Senior Engineer</span><span class="rd">Jan 2021 – Jan 2022</span></div>
           <div class="role-item"><span class="rt">Engineer</span><span class="rd">May 2019 – Dec 2020</span></div>
         </div>
-        <p class="proj"><b>Projects:</b> Cloud Service Management — a portal to order, manage, and administer IT services across hybrid and multi-cloud (Azure, AWS) environments; and Application On-boarding — automation for setting up and hosting new customer applications.</p>
+        <div class="job-body">
+        <p class="proj"><span class="lbl">Projects:</span> Cloud Service Management — a portal to order, manage, and administer IT services across hybrid and multi-cloud (Azure, AWS) environments; and Application On-boarding — automation for setting up and hosting new customer applications.</p>
         <ul class="bul">
           <li>Improved application response time by <strong>30%</strong> using Redis caching and SQL query optimization.</li>
           <li>Created a dashboard to automate and accelerate the onboarding of new customer applications.</li>
-          <li>Used <strong>Azure Service Bus</strong> for messaging between cloud environments and developed core APIs.</li>
+          <li>Used Azure Service Bus for messaging between cloud environments and developed core APIs.</li>
           <li>Authored unit tests with MSTest and Jasmine to maintain high code quality and reliable deployments.</li>
         </ul>
-        <p class="tech"><b>Tech:</b> ASP.NET MVC 5, ASP.NET Core, WCF, Angular 6, Kendo UI, RabbitMQ, Redis, Azure Service Bus, SQL Server 2017.</p>
+        <p class="tech"><span class="lbl">Tech:</span> ASP.NET MVC 5, ASP.NET Core, WCF, Angular 6, Kendo UI, RabbitMQ, Redis, Azure Service Bus, SQL Server 2017.</p>
+        </div>
       </div>
 
       <div class="job">
@@ -299,13 +307,15 @@
           <span class="dates">Jan 2019 – Apr 2019</span>
         </div>
         <div class="title-line"><span class="role2">Software Engineer</span></div>
-        <p class="proj" style="margin-top:0;color:var(--muted);">Engaged as a consultant through Orcapod Consulting Services Pvt. Ltd.</p>
-        <p class="proj"><b>Project:</b> Paytm Payment Gateway (PPG) &amp; Paytm Assist — core payment systems handling secure transactions via cards, net banking, and UPI, with assisted flows across partner banking websites.</p>
+        <div class="job-body">
+        <p class="proj">Engaged as a consultant through Orcapod Consulting Services Pvt. Ltd.</p>
+        <p class="proj"><span class="lbl">Project:</span> Paytm Payment Gateway (PPG) &amp; Paytm Assist — core payment systems handling secure transactions via cards, net banking, and UPI, with assisted flows across partner banking websites.</p>
         <ul class="bul">
-          <li>Built reusable UI components in <strong>Preact</strong> to optimize the checkout process and data validation.</li>
+          <li>Built reusable UI components in Preact to optimize the checkout process and data validation.</li>
           <li>Developed JavaScript logic for Paytm Assist to automate banking authentication steps on portal redirects.</li>
         </ul>
-        <p class="tech"><b>Tech:</b> Preact, JavaScript, HTML5, Android (Hybrid).</p>
+        <p class="tech"><span class="lbl">Tech:</span> Preact, JavaScript, HTML5, Android (Hybrid).</p>
+        </div>
       </div>
 
       <div class="job">
@@ -317,12 +327,14 @@
           <div class="role-item"><span class="rt">Software Engineer</span><span class="rd">Jan 2018 – Dec 2018</span></div>
           <div class="role-item"><span class="rt">Trainee</span><span class="rd">Jul 2017 – Dec 2017</span></div>
         </div>
-        <p class="proj"><b>Project:</b> Telecom SaaS Platform, API Integrations &amp; Analytics Portal — web applications for managing telecom costs and reporting by connecting with providers such as AT&amp;T and Verizon.</p>
+        <div class="job-body">
+        <p class="proj"><span class="lbl">Project:</span> Telecom SaaS Platform, API Integrations &amp; Analytics Portal — web applications for managing telecom costs and reporting by connecting with providers such as AT&amp;T and Verizon.</p>
         <ul class="bul">
           <li>Integrated third-party APIs (ServiceNow, AT&amp;T, Verizon) following TDD for high reliability.</li>
           <li>Built dashboards with Highcharts and optimized SQL procedures for faster invoice processing.</li>
         </ul>
-        <p class="tech"><b>Tech:</b> ASP.NET Core / MVC 5, Angular 5, AngularJS 1.4, Entity Framework, Highcharts, SQL Server.</p>
+        <p class="tech"><span class="lbl">Tech:</span> ASP.NET Core / MVC 5, Angular 5, AngularJS 1.4, Entity Framework, Highcharts, SQL Server.</p>
+        </div>
       </div>
     </section>
 
