@@ -3,365 +3,288 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Keshav Gupta — Senior Full-Stack Engineer &amp; Technical Lead</title>
-<meta name="description" content="Keshav Gupta — Senior Full-Stack Engineer and Technical Lead with 9+ years across C#, .NET, Azure, Angular/React, and production AI/GenAI (RAG, AI agents, Azure OpenAI)." />
+<title>Keshav Gupta — Senior Engineering Lead</title>
+<meta name="description" content="Keshav Gupta — Senior Engineering Lead. 9+ years building enterprise products on C#/.NET and Azure, with production AI/GenAI (RAG, AI agents, Azure OpenAI)." />
 <meta name="author" content="Keshav Gupta" />
-
-<!-- Open Graph / social preview -->
-<meta property="og:title" content="Keshav Gupta — Senior Full-Stack Engineer &amp; Technical Lead" />
-<meta property="og:description" content="9+ years building enterprise products on the Microsoft stack with production AI/GenAI experience (RAG, AI agents, Azure OpenAI)." />
+<meta property="og:title" content="Keshav Gupta — Senior Engineering Lead" />
+<meta property="og:description" content="9+ years on the Microsoft stack (C#/.NET, Azure) with production AI/GenAI — RAG, AI agents, Azure OpenAI." />
 <meta property="og:type" content="profile" />
 
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700&display=swap" rel="stylesheet" />
-
 <style>
-  :root {
-    --ink: #16202c;
-    --muted: #5a6675;
-    --soft: #7b8794;
-    --primary: #1f4e79;      /* deep professional blue */
-    --primary-2: #2e6ca4;
-    --accent: #0e7c66;       /* subtle teal accent */
-    --line: #e5e9ef;
-    --line-2: #eef1f5;
-    --bg: #ffffff;
-    --chip: #eef4fa;
-    --chip-ink: #23557f;
-    --maxw: 900px;
+  :root{
+    --ink:#1a1a1a;
+    --body:#2d3238;
+    --muted:#565f68;
+    --navy:#123a5e;
+    --navy-2:#1c5488;
+    --rule:#c9d3dc;
+    --rule-soft:#e6ebf0;
+    --bg:#ffffff;
+  }
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{
+    margin:0;
+    background:#e9edf1;
+    color:var(--body);
+    font-family: Georgia, "Times New Roman", Cambria, serif;
+    font-size:15px;
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+  }
+  /* Body text in a clean sans for readability; headings in serif for gravitas */
+  p, li, .contact, .skill-row, .chips, .meta, .tech, .hl{
+    font-family: "Calibri", "Segoe UI", Arial, Helvetica, sans-serif;
   }
 
-  * { box-sizing: border-box; }
-
-  html { scroll-behavior: smooth; }
-
-  body {
-    margin: 0;
-    background: #f4f6f9;
-    color: var(--ink);
-    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-    font-size: 15px;
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
+  .sheet{
+    max-width:820px;
+    margin:26px auto;
+    background:var(--bg);
+    box-shadow:0 8px 34px rgba(18,58,94,.12);
+    border-top:5px solid var(--navy);
   }
-
-  .page {
-    max-width: var(--maxw);
-    margin: 28px auto;
-    background: var(--bg);
-    box-shadow: 0 10px 40px rgba(20, 32, 44, 0.10);
-    border-radius: 14px;
-    overflow: hidden;
-  }
+  .inner{ padding:40px 52px 44px; }
 
   /* ---------- Header ---------- */
-  header.masthead {
-    padding: 40px 44px 26px;
-    background:
-      radial-gradient(1200px 200px at 10% -40%, rgba(46,108,164,0.10), transparent 60%),
-      linear-gradient(180deg, #fbfdff 0%, #ffffff 100%);
-    border-bottom: 1px solid var(--line);
+  .head{ position:relative; }
+  .name{
+    font-size:33px;
+    letter-spacing:.5px;
+    color:var(--navy);
+    margin:0;
+    font-weight:700;
   }
-
-  .name {
-    font-family: "Source Serif 4", Georgia, serif;
-    font-weight: 700;
-    letter-spacing: 0.4px;
-    font-size: 40px;
-    line-height: 1.05;
-    margin: 0;
-    color: var(--primary);
+  .role{
+    margin:5px 0 0;
+    font-family:"Calibri","Segoe UI",Arial,sans-serif;
+    font-size:15px;
+    font-weight:700;
+    letter-spacing:2.4px;
+    text-transform:uppercase;
+    color:var(--navy-2);
   }
-
-  .tagline {
-    margin: 8px 0 0;
-    font-size: 15.5px;
-    font-weight: 600;
-    color: var(--muted);
-    letter-spacing: 0.2px;
+  .subrole{
+    margin:3px 0 0;
+    font-family:"Calibri","Segoe UI",Arial,sans-serif;
+    font-size:12.8px;
+    color:var(--muted);
+    letter-spacing:.2px;
   }
-
-  .contact {
-    margin-top: 16px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px 18px;
-    font-size: 13.5px;
-    color: var(--muted);
+  .contact{
+    margin-top:12px;
+    font-size:13px;
+    color:var(--body);
+    line-height:1.7;
   }
-  .contact a { color: var(--primary-2); text-decoration: none; }
-  .contact a:hover { text-decoration: underline; }
-  .contact .dot { color: var(--line); }
-  .contact span.item { display: inline-flex; align-items: center; gap: 6px; }
+  .contact a{ color:var(--navy-2); text-decoration:none; }
+  .contact a:hover{ text-decoration:underline; }
+  .contact .sep{ color:var(--rule); margin:0 9px; }
 
-  .actions {
-    margin-top: 18px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+  .dl{
+    position:absolute; top:2px; right:0;
+    font-family:"Calibri","Segoe UI",Arial,sans-serif;
+    font-size:12.5px; font-weight:700;
+    color:#fff; background:var(--navy);
+    padding:8px 15px; border-radius:6px;
+    text-decoration:none; border:none; cursor:pointer;
+    transition:background .15s ease;
   }
-  .btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 7px;
-    font-size: 13px;
-    font-weight: 600;
-    padding: 8px 14px;
-    border-radius: 999px;
-    border: 1px solid var(--line);
-    color: var(--primary);
-    background: #fff;
-    text-decoration: none;
-    transition: all .15s ease;
+  .dl:hover{ background:var(--navy-2); }
+
+  /* ---------- Sections ---------- */
+  section{ margin-top:22px; }
+  h2{
+    font-size:15px;
+    color:var(--navy);
+    letter-spacing:1.3px;
+    text-transform:uppercase;
+    margin:0 0 10px;
+    padding-bottom:5px;
+    border-bottom:2px solid var(--navy);
+    font-weight:700;
   }
-  .btn:hover { border-color: var(--primary-2); background: var(--chip); }
-  .btn.primary { background: var(--primary); color: #fff; border-color: var(--primary); }
-  .btn.primary:hover { background: var(--primary-2); }
+  p.summary{ margin:0; font-size:13.6px; color:var(--body); }
+  p.summary strong{ color:var(--ink); }
 
-  /* ---------- Layout ---------- */
-  main { padding: 8px 44px 40px; }
+  /* Highlights */
+  .hl{ display:grid; grid-template-columns:1fr 1fr; gap:6px 26px; margin:2px 0 0; padding:0; list-style:none; }
+  .hl li{ position:relative; padding-left:16px; font-size:13px; color:var(--body); margin:3px 0; }
+  .hl li::before{ content:"▪"; position:absolute; left:0; color:var(--navy-2); font-size:12px; top:0; }
+  .hl b{ color:var(--ink); }
 
-  section { padding: 22px 0 6px; border-top: 1px solid var(--line-2); }
-  section:first-of-type { border-top: none; }
+  /* Skills */
+  .skill-row{ display:grid; grid-template-columns:172px 1fr; gap:8px; padding:4px 0; font-size:13px; border-bottom:1px solid var(--rule-soft); }
+  .skill-row:last-child{ border-bottom:none; }
+  .skill-row .k{ font-weight:700; color:var(--navy); }
+  .skill-row .v{ color:var(--body); }
 
-  h2.sec {
-    font-size: 12.5px;
-    font-weight: 800;
-    letter-spacing: 1.6px;
-    text-transform: uppercase;
-    color: var(--primary);
-    margin: 0 0 14px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  h2.sec::after {
-    content: "";
-    flex: 1;
-    height: 1px;
-    background: linear-gradient(90deg, var(--line), transparent);
-  }
+  /* Experience */
+  .job{ margin-top:16px; }
+  .job:first-of-type{ margin-top:6px; }
+  .job-top{ display:flex; justify-content:space-between; align-items:baseline; gap:14px; }
+  .co{ font-size:15.5px; font-weight:700; color:var(--ink); font-family:"Calibri","Segoe UI",Arial,sans-serif; }
+  .co .loc{ font-weight:400; color:var(--muted); font-size:13px; }
+  .dates{ font-size:12.5px; font-weight:700; color:var(--navy-2); white-space:nowrap; font-family:"Calibri","Segoe UI",Arial,sans-serif; }
+  .title-line{ display:flex; justify-content:space-between; align-items:baseline; gap:14px; margin:2px 0 2px; }
+  .role2{ font-size:13.6px; font-weight:700; color:var(--navy); font-family:"Calibri","Segoe UI",Arial,sans-serif; }
+  .roles{ margin:3px 0 3px; }
+  .role-item{ display:flex; justify-content:space-between; align-items:baseline; gap:12px; padding:1px 0; }
+  .role-item .rt{ font-size:13.4px; font-weight:700; color:var(--navy); font-family:"Calibri","Segoe UI",Arial,sans-serif; }
+  .role-item .rd{ font-size:12.2px; color:var(--muted); white-space:nowrap; font-family:"Calibri","Segoe UI",Arial,sans-serif; }
+  .proj{ margin:4px 0 3px; font-size:12.8px; color:var(--body); }
+  .proj b{ color:var(--ink); }
+  ul.bul{ margin:5px 0 6px; padding-left:0; list-style:none; }
+  ul.bul li{ position:relative; padding-left:16px; margin:4px 0; font-size:13px; color:var(--body); }
+  ul.bul li::before{ content:""; position:absolute; left:3px; top:7px; width:5px; height:5px; background:var(--navy-2); border-radius:50%; }
+  ul.bul li strong{ color:var(--ink); }
+  .tech{ font-size:12.3px; color:var(--muted); margin:4px 0 0; }
+  .tech b{ color:var(--ink); }
 
-  p.summary { margin: 0; color: #2b3644; font-size: 14.5px; }
-  p.summary strong { color: var(--ink); }
-
-  /* ---------- Core stack chips ---------- */
-  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
-  .chip {
-    font-size: 12.5px;
-    font-weight: 600;
-    color: var(--chip-ink);
-    background: var(--chip);
-    border: 1px solid #dce7f2;
-    padding: 5px 11px;
-    border-radius: 8px;
-  }
-
-  /* ---------- Skills grid ---------- */
-  .skills { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 34px; }
-  .skill-row { display: grid; grid-template-columns: 150px 1fr; gap: 10px; padding: 5px 0; font-size: 13.3px; align-items: baseline; }
-  .skill-row .k { font-weight: 700; color: var(--primary); }
-  .skill-row .v { color: #34404e; }
-
-  /* ---------- Experience ---------- */
-  .job { padding: 14px 0 6px; }
-  .job + .job { border-top: 1px dashed var(--line); }
-  .job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; }
-  .job-co { font-size: 16px; font-weight: 700; color: var(--ink); }
-  .job-co .loc { font-weight: 500; color: var(--soft); font-size: 13.5px; }
-  .job-date { font-size: 12.5px; font-weight: 600; color: #fff; background: var(--primary); padding: 3px 10px; border-radius: 999px; white-space: nowrap; }
-  .job-role { margin: 3px 0 2px; font-size: 14px; font-weight: 600; color: var(--accent); font-style: italic; }
-  .project { margin: 8px 0 4px; font-size: 13.6px; font-weight: 700; color: var(--primary-2); }
-  .project-desc { margin: 0 0 6px; font-size: 12.8px; color: var(--soft); }
-
-  ul.bullets { margin: 6px 0 6px; padding-left: 0; list-style: none; }
-  ul.bullets li { position: relative; padding-left: 18px; margin: 5px 0; font-size: 13.4px; color: #2b3644; }
-  ul.bullets li::before {
-    content: "";
-    position: absolute;
-    left: 2px; top: 8px;
-    width: 6px; height: 6px;
-    border-radius: 2px;
-    background: var(--primary-2);
-    transform: rotate(45deg);
-  }
-  ul.bullets li strong { color: var(--ink); }
-
-  .tech { margin-top: 6px; font-size: 12.6px; color: var(--muted); }
-  .tech b { color: var(--ink); font-weight: 700; }
-
-  /* ---------- Education & certs ---------- */
-  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
-  .edu-item { display: flex; justify-content: space-between; gap: 12px; padding: 4px 0; font-size: 13.4px; }
-  .edu-item .deg { font-weight: 600; color: var(--ink); }
-  .edu-item .yr { color: var(--soft); font-weight: 600; }
-  .edu-item .school { color: var(--muted); font-size: 12.6px; }
-
-  ul.certs { margin: 0; padding-left: 0; list-style: none; }
-  ul.certs li { position: relative; padding-left: 20px; margin: 6px 0; font-size: 13.2px; color: #2b3644; }
-  ul.certs li::before { content: "\2713"; position: absolute; left: 0; top: 0; color: var(--accent); font-weight: 800; }
-  ul.certs li b { color: var(--ink); }
-
-  footer.foot { padding: 18px 44px 30px; border-top: 1px solid var(--line-2); color: var(--soft); font-size: 12px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
-  footer.foot a { color: var(--primary-2); text-decoration: none; }
+  /* Education / Certs */
+  .edu{ display:flex; justify-content:space-between; gap:12px; padding:3px 0; font-size:13px; }
+  .edu .deg{ font-weight:700; color:var(--ink); }
+  .edu .sch{ color:var(--muted); font-size:12.5px; }
+  .edu .yr{ color:var(--navy-2); font-weight:700; font-size:12.5px; white-space:nowrap; }
+  ul.certs{ margin:0; padding-left:0; list-style:none; }
+  ul.certs li{ position:relative; padding-left:16px; font-size:13px; margin:4px 0; color:var(--body); }
+  ul.certs li::before{ content:""; position:absolute; left:3px; top:7px; width:5px; height:5px; background:var(--navy-2); border-radius:50%; }
+  ul.certs li b{ color:var(--ink); }
 
   /* ---------- Responsive ---------- */
-  @media (max-width: 720px) {
-    .page { margin: 0; border-radius: 0; }
-    header.masthead { padding: 28px 22px 20px; }
-    main { padding: 4px 22px 28px; }
-    .name { font-size: 31px; }
-    .skills { grid-template-columns: 1fr; }
-    .two-col { grid-template-columns: 1fr; }
-    .skill-row { grid-template-columns: 120px 1fr; }
-    footer.foot { padding: 16px 22px 26px; }
+  @media (max-width:680px){
+    .inner{ padding:26px 22px 30px; }
+    .name{ font-size:27px; }
+    .dl{ position:static; display:inline-block; margin-top:12px; }
+    .hl{ grid-template-columns:1fr; }
+    .skill-row{ grid-template-columns:1fr; gap:0; }
+    .skill-row .k{ margin-top:6px; }
+    .job-top, .title-line{ flex-direction:column; gap:1px; }
   }
 
-  /* ---------- Print / Save as PDF ---------- */
-  @media print {
-    body { background: #fff; font-size: 10.6px; }
-    .page { box-shadow: none; margin: 0; max-width: 100%; border-radius: 0; }
-    .actions { display: none !important; }
-    header.masthead { padding: 16px 18px 12px; background: #fff; }
-    main { padding: 0 18px 10px; }
-    .name { font-size: 26px; }
-    section { padding: 10px 0 2px; }
-    .job-date { color: #1f4e79 !important; background: transparent !important; padding: 0; }
-    a { color: inherit; text-decoration: none; }
-    .job, .skill-row li { page-break-inside: avoid; }
-    h2.sec { page-break-after: avoid; }
+  /* ---------- Print ---------- */
+  @media print{
+    @page{ size:A4; margin:14mm 15mm; }
+    body{ background:#fff; font-size:10.7px; }
+    .sheet{ box-shadow:none; margin:0; max-width:100%; border-top:4px solid var(--navy); }
+    .inner{ padding:0; }
+    .dl{ display:none !important; }
+    a{ color:var(--body); text-decoration:none; }
+    .contact a{ color:var(--body); }
+    h2{ font-size:12.5px; }
+    .name{ font-size:24px; }
+    section{ margin-top:13px; }
+    .job, li, .skill-row{ page-break-inside:avoid; }
+    h2{ page-break-after:avoid; }
   }
 </style>
 </head>
 <body>
-<div class="page">
+<div class="sheet">
+  <div class="inner">
 
-  <header class="masthead">
-    <h1 class="name">Keshav Gupta</h1>
-    <p class="tagline">Technical &amp; Engineering Lead &nbsp;•&nbsp; Senior Full-Stack Engineer &nbsp;•&nbsp; AI / GenAI</p>
+    <!-- ================= HEADER ================= -->
+    <header class="head">
+      <button class="dl" onclick="window.print()">Download PDF</button>
+      <h1 class="name">Keshav Gupta</h1>
+      <div class="role">Senior Engineering Lead</div>
+      <div class="subrole">Full-Stack Engineering (C#/.NET &amp; Azure) &nbsp;·&nbsp; AI / GenAI &nbsp;·&nbsp; Solution Architecture &amp; Technical Leadership</div>
+      <div class="contact">
+        Delhi NCR, India
+        <span class="sep">|</span>
+        <a href="tel:+919730271362">+91-9730271362</a>
+        <span class="sep">|</span>
+        <a href="mailto:keshav.gupta@outlook.in">keshav.gupta@outlook.in</a>
+        <span class="sep">|</span>
+        <a href="https://linkedin.com/in/keshavg214" target="_blank" rel="noopener">linkedin.com/in/keshavg214</a>
+      </div>
+    </header>
 
-    <div class="contact">
-      <span class="item">📍 Delhi NCR, India</span>
-      <span class="dot">|</span>
-      <span class="item">📞 <a href="tel:+919730271362">+91-9730271362</a></span>
-      <span class="dot">|</span>
-      <span class="item">✉️ <a href="mailto:keshav.gupta@outlook.in">keshav.gupta@outlook.in</a></span>
-      <span class="dot">|</span>
-      <span class="item">🔗 <a href="https://linkedin.com/in/keshavg214" target="_blank" rel="noopener">linkedin.com/in/keshavg214</a></span>
-    </div>
-
-    <div class="actions">
-      <a class="btn primary" href="#" onclick="window.print();return false;">⬇ Download / Print PDF</a>
-      <a class="btn" href="mailto:keshav.gupta@outlook.in">✉ Email me</a>
-      <a class="btn" href="https://linkedin.com/in/keshavg214" target="_blank" rel="noopener">in LinkedIn</a>
-    </div>
-  </header>
-
-  <main>
-
-    <!-- SUMMARY -->
+    <!-- ================= SUMMARY ================= -->
     <section>
-      <h2 class="sec">Professional Summary</h2>
+      <h2>Professional Summary</h2>
       <p class="summary">
-        <strong>Senior Full-Stack Engineer and Technical Lead with 9+ years</strong> of experience building and scaling
-        enterprise products on the Microsoft technology stack (C#, .NET, ASP.NET Core, Angular/React, and Azure).
-        Skilled across the full SDLC — requirements, solution design and architecture, development, testing, and
-        performance optimization — with a proven record of leading development, mentoring engineers, and owning technical
-        design for high-availability, global-scale systems. Hands-on experience delivering production
-        <strong>AI/GenAI</strong> features, including <strong>Retrieval-Augmented Generation (RAG), AI agents, and Azure
-        OpenAI</strong> integrations, and actively advancing expertise in <strong>Azure AI Foundry, the Model Context
-        Protocol (MCP), and agentic frameworks</strong>.
+        <strong>Senior Full-Stack Engineer and Engineering Lead with 9+ years</strong> of experience building and scaling
+        enterprise products on the Microsoft technology stack (C#, .NET, ASP.NET Core, Angular/React, and Azure). Skilled
+        across the full SDLC — requirements, solution design and architecture, development, testing, and performance
+        optimization — with a proven record of leading development, mentoring engineers, and owning technical design for
+        high-availability, global-scale systems. Hands-on experience delivering production <strong>AI/GenAI</strong>
+        features, including <strong>Retrieval-Augmented Generation (RAG), AI agents, and Azure OpenAI</strong>
+        integrations, and actively advancing expertise in <strong>Azure AI Foundry, the Model Context Protocol (MCP),
+        and agentic frameworks</strong>.
       </p>
     </section>
 
-    <!-- CORE STACK -->
+    <!-- ================= SKILLS ================= -->
     <section>
-      <h2 class="sec">Core Tech Stack</h2>
-      <div class="chips">
-        <span class="chip">C#</span>
-        <span class="chip">.NET (Core, Framework, MVC)</span>
-        <span class="chip">ASP.NET Core &amp; Web API</span>
-        <span class="chip">Angular &amp; React</span>
-        <span class="chip">Azure Cloud &amp; DevOps</span>
-        <span class="chip">Azure OpenAI &amp; GenAI</span>
-        <span class="chip">RAG &amp; AI Agents</span>
-        <span class="chip">Azure AI Foundry</span>
-        <span class="chip">Python</span>
-        <span class="chip">SQL Server &amp; MongoDB</span>
-      </div>
+      <h2>Technical Skills</h2>
+      <div class="skill-row"><span class="k">Languages</span><span class="v">C#, Python, JavaScript, TypeScript, SQL, HTML, CSS</span></div>
+      <div class="skill-row"><span class="k">AI &amp; Generative AI</span><span class="v">Azure OpenAI, OpenAI SDK, RAG (embeddings, chunking, vector search), AI Agents &amp; Agentic AI, Model Context Protocol (MCP), Semantic Kernel, Microsoft Agent Framework, Azure AI Foundry &amp; AI Services, Spec Kit, GitHub Copilot</span></div>
+      <div class="skill-row"><span class="k">Backend &amp; APIs</span><span class="v">ASP.NET Core / Framework / MVC, Web API, REST, Microservices, WCF, Entity Framework, LINQ, ADO.NET, FastAPI</span></div>
+      <div class="skill-row"><span class="k">Frontend</span><span class="v">Angular, React, jQuery, Kendo UI, jQWidgets</span></div>
+      <div class="skill-row"><span class="k">Cloud &amp; Infrastructure</span><span class="v">Azure — Functions, Service Bus, Queues, Topics/Subscriptions, Blob Storage, Logic Apps; Microsoft Graph; Microsoft Teams Integration (Connectors); IIS</span></div>
+      <div class="skill-row"><span class="k">Databases &amp; Caching</span><span class="v">SQL Server, Azure SQL, MongoDB (NoSQL), Redis, SQL Replication</span></div>
+      <div class="skill-row"><span class="k">Messaging &amp; Scheduling</span><span class="v">RabbitMQ, Quartz Scheduler, Windows Services</span></div>
+      <div class="skill-row"><span class="k">Security &amp; Identity</span><span class="v">OAuth 2.0, ASP.NET Identity, Microsoft Entra ID, Managed Identity, Azure RBAC</span></div>
+      <div class="skill-row"><span class="k">Testing</span><span class="v">MSTest, JustMock, Jasmine, Nightwatch (E2E), tSQLt</span></div>
+      <div class="skill-row"><span class="k">DevOps &amp; Observability</span><span class="v">Azure Pipelines, Jenkins, Git, Azure Repos, TFS, Bitbucket, Application Insights, Splunk</span></div>
+      <div class="skill-row"><span class="k">Leadership &amp; Practices</span><span class="v">Technical Leadership, Team Mentoring, Code &amp; PR Reviews, Solution Design &amp; Architecture, Agile/Scrum, Sprint Planning &amp; Estimation, Stakeholder Communication</span></div>
+      <div class="skill-row"><span class="k">Tools &amp; Platforms</span><span class="v">Visual Studio, VS Code, SSMS, Azure DevOps, Jira, Confluence, ServiceNow</span></div>
     </section>
 
-    <!-- SKILLS -->
+    <!-- ================= EXPERIENCE ================= -->
     <section>
-      <h2 class="sec">Technical Skills</h2>
-      <div class="skills">
-        <div class="skill-row"><span class="k">Languages</span><span class="v">C#, Python, JavaScript, TypeScript, SQL, HTML, CSS</span></div>
-        <div class="skill-row"><span class="k">AI &amp; GenAI</span><span class="v">Azure OpenAI, OpenAI SDK, RAG (embeddings, chunking, vector search), AI Agents &amp; Agentic AI, Model Context Protocol (MCP), Semantic Kernel, Microsoft Agent Framework, Azure AI Foundry &amp; AI Services, Spec Kit, GitHub Copilot</span></div>
-        <div class="skill-row"><span class="k">Backend &amp; APIs</span><span class="v">ASP.NET Core / Framework / MVC, Web API, REST, Microservices, WCF, Entity Framework, LINQ, ADO.NET, FastAPI</span></div>
-        <div class="skill-row"><span class="k">Frontend</span><span class="v">Angular, React, jQuery, Kendo UI, jQWidgets</span></div>
-        <div class="skill-row"><span class="k">Cloud &amp; Infra</span><span class="v">Azure (Functions, Service Bus, Queues, Topics/Subscriptions, Blob Storage, Logic Apps), Microsoft Graph, Microsoft Teams Integration (Connectors), IIS</span></div>
-        <div class="skill-row"><span class="k">Databases</span><span class="v">SQL Server, Azure SQL, MongoDB (NoSQL), Redis, SQL Replication</span></div>
-        <div class="skill-row"><span class="k">Messaging</span><span class="v">RabbitMQ, Quartz Scheduler, Windows Services</span></div>
-        <div class="skill-row"><span class="k">Security &amp; Identity</span><span class="v">OAuth 2.0, ASP.NET Identity, Microsoft Entra ID, Managed Identity, Azure RBAC</span></div>
-        <div class="skill-row"><span class="k">Testing</span><span class="v">MSTest, JustMock, Jasmine, Nightwatch (E2E), tSQLt</span></div>
-        <div class="skill-row"><span class="k">DevOps &amp; Obs.</span><span class="v">Azure Pipelines, Jenkins, Git, Azure Repos, TFS, Bitbucket, Application Insights, Splunk</span></div>
-        <div class="skill-row"><span class="k">Leadership</span><span class="v">Technical Leadership, Team Mentoring, Code &amp; PR Reviews, Solution Design &amp; Architecture, Agile/Scrum, Sprint Planning &amp; Estimation, Stakeholder Communication</span></div>
-        <div class="skill-row"><span class="k">Tools</span><span class="v">Visual Studio, VS Code, SSMS, Azure DevOps, Jira, Confluence, ServiceNow</span></div>
-      </div>
-    </section>
-
-    <!-- EXPERIENCE -->
-    <section>
-      <h2 class="sec">Work Experience</h2>
+      <h2>Professional Experience</h2>
 
       <div class="job">
-        <div class="job-head">
-          <div class="job-co">Persistent <span class="loc">— Noida</span></div>
-          <div class="job-date">May 2026 – Present</div>
+        <div class="job-top">
+          <span class="co">Persistent Systems <span class="loc">— Noida, Uttar Pradesh, India</span></span>
+          <span class="dates">May 2026 – Present</span>
         </div>
-        <div class="job-role">Senior Engineering Lead</div>
-        <div class="project">Project: Marketing &amp; Sales Platform (Top Product-based MNC Client)</div>
-        <p class="project-desc">A strategic engagement for one of the firm's most valuable clients in the Marketing &amp; Sales domain, enhancing features across multiple marketing and sales products.</p>
-        <ul class="bullets">
-          <li>Built a <strong>centralized Notification Module</strong> to deliver notifications over <strong>email and Microsoft Teams chat</strong> across multiple marketing and sales projects, replacing fragmented per-project logic with a single reusable service, integrating <strong>Microsoft Graph Client, Teams Connectors, and Logic Apps</strong> to orchestrate cross-channel delivery.</li>
-          <li>Owned end-to-end <strong>technical design and architecture</strong> for the notification platform — authoring design documents, sequence diagrams, and API contracts and driving alignment across cross-functional teams.</li>
-          <li>Provided technical leadership as <strong>Engineering Lead</strong> — breaking down epics, estimating and planning sprints, mentoring developers, and conducting <strong>code and PR reviews</strong> to enforce coding standards and quality gates.</li>
+        <div class="title-line"><span class="role2">Senior Engineering Lead</span></div>
+        <p class="proj"><b>Project:</b> Marketing &amp; Sales Platform (top product-based MNC client) — a strategic engagement enhancing features across multiple marketing and sales products.</p>
+        <ul class="bul">
+          <li>Architected and built a <strong>centralized Notification Module</strong> delivering notifications over <strong>email and Microsoft Teams chat</strong> across multiple projects, replacing fragmented per-project logic with a single reusable service — integrating <strong>Microsoft Graph, Teams Connectors, and Logic Apps</strong> for cross-channel delivery.</li>
+          <li>Owned end-to-end <strong>technical design and architecture</strong>, authoring design documents, sequence diagrams, and API contracts and driving alignment across cross-functional teams.</li>
+          <li>Provided technical leadership as <strong>Engineering Lead</strong> — decomposing epics, estimating and planning sprints, mentoring developers, and running <strong>code and PR reviews</strong> to enforce coding standards and quality gates.</li>
           <li>Authored unit tests to ensure reliability and leveraged <strong>Spec Kit</strong> for AI-assisted, specification-driven development.</li>
         </ul>
         <p class="tech"><b>Tech:</b> ASP.NET Core, .NET Core, React, Azure SQL, Azure Cloud, Microsoft Graph, Teams Connectors, Logic Apps, Azure OpenAI, Azure Functions, Service Bus, Queues, Blob Storage, Application Insights, Azure DevOps, MSTest, Spec Kit.</p>
       </div>
 
       <div class="job">
-        <div class="job-head">
-          <div class="job-co">Mercer <span class="loc">— Noida</span></div>
-          <div class="job-date">Jan 2022 – Apr 2026</div>
+        <div class="job-top">
+          <span class="co">Mercer <span class="loc">— Noida, Uttar Pradesh, India</span></span>
+          <span class="dates">Jan 2022 – Apr 2026</span>
         </div>
-        <div class="job-role">Senior Principal Engineer — Applications Development</div>
-        <div class="project">Project: Global Employee Benefits Platform (Darwin)</div>
-        <p class="project-desc">Mercer's flagship global employee benefits platform using AI, automation, and analytics to deliver personalized, data-driven experiences and optimize benefits administration for enterprises worldwide.</p>
-        <ul class="bullets">
-          <li>Delivered feature enhancements on <strong>Darwin</strong>, a global benefits platform serving <strong>millions of employees across 100+ countries</strong> for enterprise clients, improving reliability and user experience at scale.</li>
-          <li>Engineered enhancements across legacy (<strong>Origin</strong>) and current (<strong>Evolve</strong>) products, spanning Control Center (Admin) and Reward Center (End-user), with core development across <strong>Reimbursement, Scheme Configuration, and Benefit Templates</strong>.</li>
-          <li>Drove <strong>solution architecture and technical design</strong> for key modules — authoring design documents and technical specifications and presenting proposals to architects and stakeholders for sign-off.</li>
+        <div class="roles">
+          <div class="role-item"><span class="rt">Senior Principal Engineer — Applications Development</span><span class="rd">Nov 2025 – Apr 2026</span></div>
+          <div class="role-item"><span class="rt">Principal Engineer — Applications Development</span><span class="rd">Jan 2022 – Oct 2025</span></div>
+        </div>
+        <p class="proj"><b>Project:</b> Global Employee Benefits Platform (Darwin) — Mercer's flagship platform using AI, automation, and analytics to deliver personalized, data-driven benefits administration for enterprises worldwide.</p>
+        <ul class="bul">
+          <li>Delivered feature enhancements on <strong>Darwin</strong>, a global benefits platform serving <strong>millions of employees across 100+ countries</strong>, improving reliability and user experience at scale.</li>
+          <li>Engineered enhancements across legacy (<strong>Origin</strong>) and current (<strong>Evolve</strong>) products — spanning Control Center (Admin) and Reward Center (End-user) — with core development across <strong>Reimbursement, Scheme Configuration, and Benefit Templates</strong>.</li>
+          <li>Drove <strong>solution architecture and technical design</strong> for key modules, authoring design documents and technical specifications and presenting proposals to architects and stakeholders for sign-off.</li>
           <li>Integrated <strong>AI-powered translations</strong> and <strong>Azure-based OCR</strong> for automated document extraction, reducing manual document-handling effort by <strong>50%</strong>.</li>
-          <li>Built an <strong>AI-powered chatbot</strong> answering employee queries from benefit documents and policies using <strong>RAG</strong>, backed by <strong>OpenAI GPT-4 family models</strong> via a Mercer-hosted AI governance layer; implemented background agents to ingest/chunk documents, generate embeddings, and populate the vector-based RAG pipeline.</li>
+          <li>Built an <strong>AI-powered chatbot</strong> answering employee queries from benefit documents and policies using <strong>RAG</strong>, backed by <strong>OpenAI GPT-4-family models</strong> via a Mercer-hosted AI governance layer; implemented background agents to ingest and chunk documents, generate embeddings, and populate the vector-based RAG pipeline.</li>
           <li>Built an Innovation-Week PoC for <strong>automated test-case generation</strong> from requirement documents, orchestrating multiple agents and intermediate reasoning steps to produce structured, relevant test cases.</li>
-          <li>Mentored engineers, onboarded new team members, led code/PR reviews, and championed engineering best practices and reusable patterns.</li>
+          <li>Spearheaded the <strong>UX Lift-off</strong> of Origin toward design parity with Evolve, and enhanced <strong>DCL (Darwin Configuration Language)</strong> to support new rules and configurations; mentored engineers and championed best practices and reusable patterns.</li>
         </ul>
         <p class="tech"><b>Tech:</b> ASP.NET Core, OpenAI, Angular, RabbitMQ, SQL Server, MongoDB.</p>
       </div>
 
       <div class="job">
-        <div class="job-head">
-          <div class="job-co">Nagarro <span class="loc">— Gurugram / Noida</span></div>
-          <div class="job-date">May 2019 – Jan 2022</div>
+        <div class="job-top">
+          <span class="co">Nagarro <span class="loc">— Gurugram / Noida, India</span></span>
+          <span class="dates">May 2019 – Jan 2022</span>
         </div>
-        <div class="job-role">Senior Engineer</div>
-        <div class="project">Project: Cloud Service Management &amp; Application On-boarding</div>
-        <p class="project-desc">A cloud-based service portal for customers to order, manage, and administer IT services across hybrid and multi-cloud (Azure, AWS) environments, plus a tool to automate onboarding of new customer applications.</p>
-        <ul class="bullets">
+        <div class="roles">
+          <div class="role-item"><span class="rt">Senior Engineer</span><span class="rd">Jan 2021 – Jan 2022</span></div>
+          <div class="role-item"><span class="rt">Engineer</span><span class="rd">May 2019 – Dec 2020</span></div>
+        </div>
+        <p class="proj"><b>Projects:</b> Cloud Service Management — a portal to order, manage, and administer IT services across hybrid and multi-cloud (Azure, AWS) environments; and Application On-boarding — automation for setting up and hosting new customer applications.</p>
+        <ul class="bul">
           <li>Improved application response time by <strong>30%</strong> using Redis caching and SQL query optimization.</li>
           <li>Created a dashboard to automate and accelerate the onboarding of new customer applications.</li>
           <li>Used <strong>Azure Service Bus</strong> for messaging between cloud environments and developed core APIs.</li>
@@ -371,14 +294,14 @@
       </div>
 
       <div class="job">
-        <div class="job-head">
-          <div class="job-co">Paytm <span class="loc">— Noida</span></div>
-          <div class="job-date">Jan 2019 – Apr 2019</div>
+        <div class="job-top">
+          <span class="co">Paytm <span class="loc">— Noida Area, India</span></span>
+          <span class="dates">Jan 2019 – Apr 2019</span>
         </div>
-        <div class="job-role">Software Engineer (Orcapod Payroll Contract)</div>
-        <div class="project">Project: Paytm Payment Gateway (PPG) &amp; Paytm Assist</div>
-        <p class="project-desc">Core payment systems handling secure transactions via cards, net banking, and UPI, with assisted flows across partner banking websites.</p>
-        <ul class="bullets">
+        <div class="title-line"><span class="role2">Software Engineer</span></div>
+        <p class="proj" style="margin-top:0;color:var(--muted);">Engaged as a consultant through Orcapod Consulting Services Pvt. Ltd.</p>
+        <p class="proj"><b>Project:</b> Paytm Payment Gateway (PPG) &amp; Paytm Assist — core payment systems handling secure transactions via cards, net banking, and UPI, with assisted flows across partner banking websites.</p>
+        <ul class="bul">
           <li>Built reusable UI components in <strong>Preact</strong> to optimize the checkout process and data validation.</li>
           <li>Developed JavaScript logic for Paytm Assist to automate banking authentication steps on portal redirects.</li>
         </ul>
@@ -386,14 +309,16 @@
       </div>
 
       <div class="job">
-        <div class="job-head">
-          <div class="job-co">Websym Solutions Pvt Ltd <span class="loc">— Pune</span></div>
-          <div class="job-date">Jul 2017 – Dec 2018</div>
+        <div class="job-top">
+          <span class="co">Websym Solutions Pvt. Ltd. <span class="loc">— Pune / Pimpri-Chinchwad Area, India</span></span>
+          <span class="dates">Jul 2017 – Dec 2018</span>
         </div>
-        <div class="job-role">Software Engineer</div>
-        <div class="project">Project: Telecom SaaS Platform, API Integrations &amp; Analytics Portal</div>
-        <p class="project-desc">Web applications for managing telecom costs and reporting by connecting with providers such as AT&amp;T and Verizon.</p>
-        <ul class="bullets">
+        <div class="roles">
+          <div class="role-item"><span class="rt">Software Engineer</span><span class="rd">Jan 2018 – Dec 2018</span></div>
+          <div class="role-item"><span class="rt">Trainee</span><span class="rd">Jul 2017 – Dec 2017</span></div>
+        </div>
+        <p class="proj"><b>Project:</b> Telecom SaaS Platform, API Integrations &amp; Analytics Portal — web applications for managing telecom costs and reporting by connecting with providers such as AT&amp;T and Verizon.</p>
+        <ul class="bul">
           <li>Integrated third-party APIs (ServiceNow, AT&amp;T, Verizon) following TDD for high reliability.</li>
           <li>Built dashboards with Highcharts and optimized SQL procedures for faster invoice processing.</li>
         </ul>
@@ -401,47 +326,31 @@
       </div>
     </section>
 
-    <!-- EDUCATION + CERTS -->
+    <!-- ================= EDUCATION ================= -->
     <section>
-      <div class="two-col">
-        <div>
-          <h2 class="sec">Education</h2>
-          <div class="edu-item">
-            <div>
-              <div class="deg">B-Tech in Information Technology</div>
-              <div class="school">Bharati Vidyapeeth University, Pune</div>
-            </div>
-            <div class="yr">2017</div>
-          </div>
-          <div class="edu-item">
-            <div>
-              <div class="deg">Diploma in Network Security</div>
-              <div class="school">Bharati Vidyapeeth University, Pune</div>
-            </div>
-            <div class="yr">2016</div>
-          </div>
-        </div>
-
-        <div>
-          <h2 class="sec">Certifications</h2>
-          <ul class="certs">
-            <li><b>Microsoft Certified: Azure AI Fundamentals (AI-900)</b> — Microsoft</li>
-            <li><b>AI Engineer Agentic Track:</b> The Complete Agent &amp; MCP Course — Udemy</li>
-            <li><b>Design &amp; Analysis of Algorithms</b>; Data Structures &amp; Algorithms — IIT Madras (NPTEL)</li>
-            <li><b>Intro to CS &amp; Programming using Python</b> — MIT (edX)</li>
-          </ul>
-        </div>
+      <h2>Education</h2>
+      <div class="edu">
+        <div><span class="deg">B-Tech in Information Technology</span> — <span class="sch">Bharati Vidyapeeth University, Pune</span></div>
+        <span class="yr">2017</span>
+      </div>
+      <div class="edu">
+        <div><span class="deg">Diploma in Network Security</span> — <span class="sch">Bharati Vidyapeeth University, Pune</span></div>
+        <span class="yr">2016</span>
       </div>
     </section>
 
-  </main>
+    <!-- ================= CERTIFICATIONS ================= -->
+    <section>
+      <h2>Certifications</h2>
+      <ul class="certs">
+        <li><b>Microsoft Certified: Azure AI Fundamentals (AI-900)</b> — Microsoft</li>
+        <li><b>AI Engineer Agentic Track: The Complete Agent and MCP Course</b> — Udemy</li>
+        <li><b>Design &amp; Analysis of Algorithms; Data Structures &amp; Algorithms</b> — IIT Madras (NPTEL)</li>
+        <li><b>Introduction to Computer Science and Programming using Python</b> — MIT (edX)</li>
+      </ul>
+    </section>
 
-  <footer class="foot">
-    <span>© <span id="yr"></span> Keshav Gupta · Senior Full-Stack Engineer &amp; Technical Lead</span>
-    <span><a href="mailto:keshav.gupta@outlook.in">keshav.gupta@outlook.in</a> · <a href="https://linkedin.com/in/keshavg214" target="_blank" rel="noopener">LinkedIn</a></span>
-  </footer>
+  </div>
 </div>
-
-<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
 </body>
 </html>
