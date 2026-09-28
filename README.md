@@ -2,7 +2,7 @@
 
 Personal resume site of **Keshav Gupta** — Senior Full-Stack Engineer & Technical Lead (9+ years, Microsoft stack + AI/GenAI).
 
-🔗 **Live:** https://keshav87.github.io/keshav.gupta.github.io/
+🔗 **Live:** https://keshav87.github.io/
 
 ## Contents
 - `index.html` — the resume (single self-contained page; responsive + print/PDF friendly)
